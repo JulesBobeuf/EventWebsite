@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/stylesqui.css">
+    <title>A quel prix?</title>
+<body>
+    <nav class="animate__animated animate__fadeInLeft animate__slow animate__delay-0s ">
+        <a href="sae.html"><img class="logo" alt="" src="./Images/fakelogo.png"></a>
+        <div class="burger">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+        <ul class="nav__links">
+            <li class="nav__link active"><a href="./qui_somme_nous.html">Qui sommes-nous?</a></li>
+            <li class="nav__link"><a href="./que_faisons_nous.html">Que faisons-nous?</a></li>
+            <li class="nav__link active"><a href="./A_quel_prix.html">A quel prix?</a></li>
+            <li class="nav__link"><a class="btn" href="./Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-nav">
+        <ul class="m-nav__links">
+            <li class="m-nav__link active"><a href="qui_somme_nous.html">Qui sommes-nous?</a></li>
+            <li class="m-nav__link"><a href="./que_faisons_nous.html">Que faisons-nous?</a></li>
+            <li class="m-nav__link active"><a href="./A_quel_prix.html">A quel prix?</a></li>
+            <li class="m-nav__link"><a href="./Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="prix">
+        <h1>Mais à quel prix?</h1>
+        <p>Vous trouvez ci-dessous nos fourchettes de prix en fonction des formules.</p>
+    </div>
+    <div class="table">
+        <table>
+            <tr>
+                <th>Escape game</th>
+                <th>Prix</th>
+            </tr>
+            <tr>
+                <td>La boite de Pandore</td>
+                <td>100-200€</td>
+            </tr>
+            <tr>
+                <td>L'épée virtuelle</td>
+                <td>350-500€</td>
+            </tr>
+            <tr>
+                <td>L'authentique</td>
+                <td>1000-2500€</td>
+            </tr>
+        </table>
+        <div class="smol">
+            <small>*des frais de déplacement peuvent être ajoutés au devis</small><br>
+            <small>*Les prix peuvent varier en fonction de vos envies</small>
+        </div>
+    </div>
+    <div class="btnctc">
+        <h3>Vous êtes interessé? Contactez nous !</h3><br>
+        <a href="./Contact.html" class="btnn">Devis</a>
+    </div>
+    <footer id="Contact">
+        <p>Avez-vous des questions ?</p>
+        <a href="./Contact.html" class="link">Contactez nous !</a>
+    </footer>
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const burger = document.querySelector(".burger")
+
+        burger.addEventListener('click', () => {
+            mobileNav.classList.toggle('slide')
+        })
+    </script>
+</body>
+</html>

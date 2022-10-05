@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <title>L'épée de bois</title>
+</head>
+<body>
+    <nav class="animate__animated animate__fadeInLeft animate__slow animate__delay-0s ">
+        <a href="sae.html"><img class="logo" alt="" src="./Images/fakelogo.png"></a>
+        <div class="burger">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+        <ul class="nav__links">
+            <li class="nav__link active"><a href="#who">Qui sommes-nous?</a></li>
+            <li class="nav__link"><a href="#what">Que faisons-nous?</a></li>
+            <li class="nav__link active"><a href="#price">A quel prix?</a></li>
+            <li class="nav__link"><a class="btn" href="./Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-nav">
+        <ul class="m-nav__links">
+            <li class="m-nav__link active"><a href="#who">Qui sommes-nous?</a></li>
+            <li class="m-nav__link"><a href="#what">Que faisons-nous?</a></li>
+            <li class="m-nav__link active"><a href="#price">A quel prix?</a></li>
+            <li class="m-nav__link"><a href="./Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="homepage">
+        <h1 class="title">L'épée de bois</h1>
+        <h2 class="subtitle"> Là où vous voulez être</h2>
+        <div class="background">
+        </div>
+    </div>
+    <div class="who" id="who">
+        <h2 class="subtitle"> Qui sommes-nous?</h2>
+        <p class="description">Nous sommes une startup française proposant des escapes games conçu spécialement pour vous.</p>
+        <a href="./qui_somme_nous.html" class="btn">En savoir plus</a>
+    </div>
+    <div class="what" id="what">
+        <h2 class="subtitle"> Que faisons nous?</h2>
+        <p class="description">Nous proposons des escapes games sur mesure avec pour thème la fantasy et les univers fantastiques.</p>
+        <a href="./que_faisons_nous.html" class="btn">En savoir plus</a>
+    </div>
+    <div class="price" id="price">
+        <h2 class="subtitle"> A quel prix?</h2>
+        <p class="description">Nous vendons nos services au prix que nous pensons le plus juste et le plus adapté à notre savoir-faire.</p>
+        <a href="./A_quel_prix.html" class="btn">En savoir plus</a>
+    </div>
+    <footer id="Contact">
+        <p>Avez-vous des questions ?</p>
+        <a href="./Contact.html" class="link">Contactez nous !</a>
+    </footer>
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const burger = document.querySelector(".burger")
+
+        burger.addEventListener('click', () => {
+            mobileNav.classList.toggle('slide')
+        })
+    </script>
+</body>
+</html>

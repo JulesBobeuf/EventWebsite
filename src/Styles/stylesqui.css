@@ -1,0 +1,381 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+background: #21192B;
+font-family: sans-serif;
+color: lightgray;
+}
+nav {
+    background-image: url(../Images/test.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 3rem;
+}
+
+.nav__link a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.nav__link a:hover {
+    color: #9A9A9A;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 1em 2em;
+    overflow: hidden;
+    border-radius: 3rem;
+    border: 2px solid #9A9A9A;
+    transition: background 1s;
+    margin-left: -1rem;
+    color: white !important;
+}
+
+.btn:hover {
+    background: #4e3a66;
+}
+
+span {
+    position: absolute;
+    background: white;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: rippleEffect 3s linear infinite;
+}
+
+.mobile-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4e3a66;
+    color: white;
+    padding: 1rem 3rem;
+    transform: translateX(-100%);
+    width: 100%;
+    transition: transform 1s ease-in-out;
+}
+.burger {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+    display: none;
+}
+
+.lines {
+    background: white;
+    border-radius: 1rem;
+    height: 0.2rem;
+    width: 1.2rem;
+}
+
+.m-nav__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.m-nav__link a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.m-nav__link a:hover {
+    color: #606969;
+}
+
+.m-btn {
+    position: relative;
+    display: inline-block;
+}
+
+.m-btn:hover {
+    background: #4e3a66;
+}
+
+.slide {
+    transform: translateX(0%);
+}
+
+@keyframes rippleEffect {
+    0% {
+width: 0px;
+height: 0px;
+opacity: 0.5;
+    }
+
+    100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+    }
+}
+
+@media screen and (max-width: 60rem) {
+    .nav__links {
+    display: none;
+    }
+    .burger {
+    display: flex;
+    }
+}
+.logo{
+    height: 5rem;
+}
+.homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 15vh;
+    flex-direction: column;   
+}
+.background{
+    background-image: url(../Images/test.jpg);
+    background-size: cover;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+.background::after{
+    content:"";
+    background-color: rgba(0, 0, 0, 0.623);
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.who{
+    background-color: #21192B;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Pic{
+    display: grid;
+    height: 40vh;
+    width: 40vh;
+    padding: 2rem;
+    grid-column: auto;
+}
+.descr{
+    display: grid;
+    text-align: center;
+    grid-column: auto;
+    margin-right: 10%;
+}
+.esc{
+    background-color: #21192B;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.presentation{
+    background-color: #21192B;
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 0.35%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.membres{
+    background-color: #21192B;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+.prix{
+    padding: 60px 0 60px 0;
+    margin: 0;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.prix > p {
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.Jules{
+    display: grid;
+    padding: 2rem;
+    text-align: center;
+}
+.Elsa{
+    display: grid;
+    padding: 2rem;
+}
+.Thomas{
+    display: grid;
+    padding: 2rem;
+}
+
+.contact{
+    background-color: #21192B;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 1em 2em;
+    overflow: hidden;
+    border-radius: 3rem;
+    border: 2px solid #9A9A9A;
+    transition: background 1s;
+    margin-left: -1rem;
+    color: white !important;
+    background-color: #9A9A9A;
+}
+
+.btnn {
+    position: relative;
+    display: inline-block;
+    padding: 1em 2em;
+    overflow: hidden;
+    border-radius: 3rem;
+    border: 2px solid #9A9A9A;
+    transition: background 1s;
+    margin-left: -1rem;
+    color: white !important;
+    background-color: #9A9A9A;
+}
+.btn:hover {
+    background: #4e3a66;
+}
+.btnn:hover {
+    background: #4e3a66;
+}
+table{
+    margin: auto;
+    margin-bottom: 5px;
+    width: 90%;
+    max-width: 500px;
+}
+.smol{
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+    margin-bottom: 40px;
+
+}
+small{
+    padding: 0;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+}
+th,td{
+    background-color: #3d2d4e;
+    padding: 10px;
+    margin: 2px;
+    font-size: 20px;
+}
+footer{
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    gap: 1rem;
+}
+.btnctc{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+}
+.link{
+    color: white;
+}
+
+@media only screen and (max-width:550px) {
+.title{
+    font-size: 3rem;
+}
+footer{
+    flex-direction: column;
+}
+.logo{
+    height: 2rem;
+}
+td,th{
+    font-size: 17px;
+    padding: 5px;
+}
+
+}

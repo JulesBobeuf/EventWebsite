@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/stylesqui.css">
+    <title>Que Faisons-nous?</title>
+<body>
+    <nav class="animate__animated animate__fadeInLeft animate__slow animate__delay-0s ">
+        <a href="sae.html"><img class="logo" alt="" src="./Images/fakelogo.png"></a>
+        <div class="burger">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+        <ul class="nav__links">
+            <li class="nav__link active"><a href="./qui_somme_nous.html">Qui sommes-nous?</a></li>
+            <li class="nav__link"><a href="./que_faisons_nous.html">Que faisons-nous?</a></li>
+            <li class="nav__link active"><a href="./A_quel_prix.html">A quel prix?</a></li>
+            <li class="nav__link"><a class="btn" href="./Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-nav">
+        <ul class="m-nav__links">
+            <li class="m-nav__link active"><a href="qui_somme_nous.html">Qui sommes-nous?</a></li>
+            <li class="m-nav__link"><a href="./que_faisons_nous.html">Que faisons-nous?</a></li>
+            <li class="m-nav__link active"><a href="./A_quel_prix.html">A quel prix?</a></li>
+            <li class="m-nav__link"><a href="./Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="who">
+        <h1>Que faisons-nous ?</h1>
+        <p>L’épée de bois est une entreprise spécialisée dans l’escape game sur mesure ! Voici la liste de nos produits de base (adaptables à tous vos besoins)    </p>
+    </div>
+    <div class="esc">
+        <h2>Nos produits :</h2>
+        <p>Voici les concepts que nous proposons. Bien sûr, tout est modulable ! </p> 
+    </div>
+    <div class="presentation">
+        <img class="Pic" src="./Images/Boite.jpg" alt="La boite de Pandore">
+        <p class="descr">La boite de Pandore est un escape game merveilleux et fait avec minutie contenu dans une boîte de la taille d'une boîte à chaussures ! </p>
+        <img class="Pic" src="./Images/Epee.jpg" alt="L'épée virtuelle">
+        <p class="descr">L'épée virtuelle est une formules pour les aventuriers des temps modernes. Une aventure virtuelle palpitante qui ne manque pas de cachet !</p>
+        <img class="Pic" src="./Images/Authentique.jpg" alt="L'authentique">
+        <p class="descr">L'authentique , l'aventure sur mesure en physique avec ses décors envoutants , ses acteurs et ses histoires immersives !</p>
+    </div>
+    <footer id="Contact">
+        <p>Avez-vous des questions ?</p>
+        <a href="./Contact.html" class="link">Contactez nous !</a>
+    </footer>
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const burger = document.querySelector(".burger")
+
+        burger.addEventListener('click', () => {
+            mobileNav.classList.toggle('slide')
+        })
+    </script>
+</body>
+</html>

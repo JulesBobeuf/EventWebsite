@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/stylesqui.css">
+    <title>Qui sommes nous?</title>
+<body>
+    <nav class="animate__animated animate__fadeInLeft animate__slow animate__delay-0s ">
+        <a href="sae.html"><img class="logo" alt="" src="./Images/fakelogo.png"></a>
+        <div class="burger">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+        <ul class="nav__links">
+            <li class="nav__link active"><a href="./qui_somme_nous.html">Qui sommes-nous?</a></li>
+            <li class="nav__link"><a href="./que_faisons_nous.html">Que faisons-nous?</a></li>
+            <li class="nav__link active"><a href="./A_quel_prix.html">A quel prix?</a></li>
+            <li class="nav__link"><a class="btn" href="./Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-nav">
+        <ul class="m-nav__links">
+            <li class="m-nav__link active"><a href="qui_somme_nous.html">Qui sommes-nous?</a></li>
+            <li class="m-nav__link"><a href="./que_faisons_nous.html">Que faisons-nous?</a></li>
+            <li class="m-nav__link active"><a href="./A_quel_prix.html">A quel prix?</a></li>
+            <li class="m-nav__link"><a href="./Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="who">
+        <h1>Qui sommes nous?</h1>
+        <p>Nous sommes une équipe de fans d’univers fantasy , de jeux de rôle grandeur nature et d’escape games immersifs. Spécialisés dans les costumes , la décoration dans l’univers fantaisiste et la confection de scénarios bien ficelés.</p>
+    </div>
+    <div class="esc">
+        <h2>Pourquoi les escapes games?</h2>
+        <p>Dans ce marché en développement, nous avions le sentiment qu’après avoir triomphé de quelques jeux d’escape games le reste devenait plutôt répétitif. Nous avons donc décidé de proposer un produit adapté à vos besoins et vos envies dans un univers de votre choix.     </p> 
+    </div>
+    <div>
+        <h2 class="membres"> Membres </h2>
+    </div>
+    <div class="presentation">
+        <img class="Jules" src="./Images/Jules.PNG" alt="Jules Bobeuf">
+        <p class="Jules">Bobeuf Jules, 18 ans. Optenteur du BACCALAUREAT en 2021 avec mention. Actuellement en BUT Informatique avec pour but de devenir ingénieur.</p>
+        <img class="Elsa" src="./Images/Elsa.PNG" alt="Elsa Logier">
+        <p class="Elsa">Je m'appelle Elsa Logier, j'ai 19 ans  et je suis étudiante en BUT informatique à l'IUT de Lens. J'ai pour projet de devenir développeuse informatique. En 2021 j'ai fait un DU tremplin en informatique à l'IUT de Lens.</p>
+        <img class="Thomas" src="./Images/Thomas.PNG" alt="Thomas Santoro">
+        <p class="Thomas">Je m'appelle Thomas Santoro, 18 ans. Je suis étudiant en BUT Informatique à l'IUT de Lens . J'ai pour projet de devenir Ingénieur en informatique  et je suis passionné par les jeux vidéos et la médecine.</p>
+    </div>
+    <div class="contact">
+        <h2>Des questions? Un besoin particulier?</h2>
+        <a href="./Contact.html" class="link">Envoyez un mail à notre support! Nous répondons 24/7 !</a>
+    </div>
+    <footer id="Contact">
+        <p>Avez-vous des questions ?</p>
+        <a href="./Contact.html" class="link">Contactez nous !</a>
+    </footer>
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const burger = document.querySelector(".burger")
+
+        burger.addEventListener('click', () => {
+            mobileNav.classList.toggle('slide')
+        })
+    </script>
+</body>
+</html>

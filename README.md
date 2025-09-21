@@ -20,8 +20,8 @@ This project was created by three classmates as part of a university course. The
 EventWebsite/
 ├── 📁 src/                  # Source files
 │   ├── 📁 Images/           # Image assets
-│   ├── 📁 Styles/              # CSS files
-│   └── 📄 sae.html            # Main HTML file
+│   ├── 📁 Styles/           # CSS files
+│   └── 📄 sae.html          # Main HTML file
 └── 📄 README.md             # Project documentation
 ```
 

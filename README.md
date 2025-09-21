@@ -19,10 +19,9 @@ This project was created by three classmates as part of a university course. The
 ```markdown
 EventWebsite/
 ├── 📁 src/                  # Source files
-│   ├── 📁 images/           # Image assets
-│   ├── 📁 js/               # JavaScript files
-│   └── 📁 css/              # CSS files
-├── 📄 index.html            # Main HTML file
+│   ├── 📁 Images/           # Image assets
+│   ├── 📁 Styles/              # CSS files
+│   └── 📄 sae.html            # Main HTML file
 └── 📄 README.md             # Project documentation
 ```
 

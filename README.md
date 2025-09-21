@@ -31,10 +31,10 @@ EventWebsite/
 
 ```sh
 git clone https://github.com/JulesBobeuf/EventWebsite.git
-cd EventWebsite
+cd EventWebsite/src
 ```
 
-2. Open `index.html` in your preferred web browser to view the website.
+2. Open `sae.html` in your preferred web browser to view the website.
 
 ## License
 

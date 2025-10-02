@@ -1,10 +1,12 @@
-# EventWebsite
-
-**EventWebsite** is a static website developed using HTML, CSS, and JavaScript. It is designed to serve as a template for an event company, showcasing services, testimonials, and contact information.
+<div align="center">
+  <h1 align="center">Event Website</h1>
+  <img src="assets/readme-event.png" alt="Event Website Screenshot" width="600">  <p align="center">
+    Our Event Company website developed using HTML, CSS, and JavaScript.
+</div>
 
 ## About The Project
 
-This project was created by three classmates as part of a university course. The website aims to provide a professional and user-friendly interface for an event company, featuring sections for services, testimonials, and contact information.
+This project was created with two other classmates as part of a university course. The website aims to provide a professional and user-friendly interface for an event company, featuring sections for services, testimonials, and contact information.
 
 ## Built With
 
@@ -45,3 +47,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Jules Bobeuf  
 [LinkedIn](https://www.linkedin.com/in/bobeuf-jules/)  
 bobeuf.jules@gmail.com
+
+Elsa Logier  
+[LinkedIn](https://www.linkedin.com/in/elsa-logier-2bb692254/)
+
+Thomas Santoro  
